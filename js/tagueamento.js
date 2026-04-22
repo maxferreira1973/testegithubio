@@ -11,5 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 'element_group': 'menu' 
             });
         });
-    };
-}  
+    }
+});
