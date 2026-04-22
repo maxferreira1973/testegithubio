@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageLoc = window.location.href;
 
     // --- EVENTS MENU ---
-    const menuContato = document.querySelector('.menu-lista-link');
+    const menuContato = document.querySelector('.menu-lista-item.entre_em_contato');
     if (menuContato) {
         menuContato.addEventListener('click', () => {
             gtag('event', 'click', { 
