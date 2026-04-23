@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageLoc = window.location.href;
 
     // --- EVENTS MENU ---
-    const menuContato = document.querySelector('.menu-lista-link');
+    const menuContato = document.getElementById('contato');
     if (menuContato) {
         menuContato.addEventListener('click', () => {
             gtag('event', 'click_contato', { 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-        const menuHome = document.querySelector('.menu-lista-link1');
+        const menuHome = document.getElementById('home');
     if (menuHome) {
         menuHome.addEventListener('click', () => {
             gtag('event', 'click_home', { 
