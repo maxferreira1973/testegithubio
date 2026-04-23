@@ -32,4 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+        const menuHome = document.querySelector('.menu-lista-link1');
+    if (menuHome) {
+        menuHome.addEventListener('click', () => {
+            gtag('event', 'click_home', { 
+                'page_location': pageLoc, 
+                'element_name': 'home', 
+                'element_group': 'menu' 
+            });
+        });
+    }
 });
