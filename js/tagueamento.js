@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageLoc = window.location.href;
 
     // --- EVENTS MENU ---
-    const menuContato = document.querySelector('.menu-lista-item.entre_em_contato');
+    const menuContato = document.querySelector('.menu-lista-link');
     if (menuContato) {
         menuContato.addEventListener('click', () => {
-            gtag('event', 'click', { 
+            gtag('event', 'click_contato', { 
                 'page_location': pageLoc, 
                 'element_name': 'entre_em_contato', 
                 'element_group': 'menu' 
