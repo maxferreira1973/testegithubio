@@ -52,4 +52,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    const menuSobre = document.querySelector('.menu-lista-link.menu-lista-sobre');
+    if (menuSobre) {
+        menuSobre.addEventListener('click', () => {
+            gtag('event', 'click_sobre', { 
+                'page_location': pageLoc, 
+                'element_name': 'sobre', 
+                'element_group': 'menu' 
+            });
+        });
+    }
+});
+                'element_group': 'menu' 
+            });
+        });
+    }
 });
