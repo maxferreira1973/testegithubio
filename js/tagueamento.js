@@ -32,12 +32,22 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-        const menuHome = document.getElementById('home');
+    const menuHome = document.getElementById('home');
     if (menuHome) {
         menuHome.addEventListener('click', () => {
             gtag('event', 'click_home', { 
                 'page_location': pageLoc, 
                 'element_name': 'home', 
+                'element_group': 'menu' 
+            });
+        });
+    }
+    const menuDownload = document.querySelector('.menu-lista-link.menu-lista-download');
+    if (menuDownload) {
+        menuDownload.addEventListener('click', () => {
+            gtag('event', 'click_download', { 
+                'page_location': pageLoc, 
+                'element_name': 'download_pdf', 
                 'element_group': 'menu' 
             });
         });
