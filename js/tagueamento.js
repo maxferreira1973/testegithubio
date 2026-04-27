@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'element_group': 'menu' 
             });
         });
-    }
+    };
     const menuHome = document.getElementById('home');
     if (menuHome) {
         menuHome.addEventListener('click', () => {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'element_group': 'menu' 
             });
         });
-    }
+    };
     const menuDownload = document.querySelector('.menu-lista-link.menu-lista-download');
     if (menuDownload) {
         menuDownload.addEventListener('click', () => {
@@ -58,11 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
             gtag('event', 'click_sobre', { 
                 'page_location': pageLoc, 
                 'element_name': 'sobre', 
-                'element_group': 'menu' 
-            });
-        });
-    }
-});
                 'element_group': 'menu' 
             });
         });
