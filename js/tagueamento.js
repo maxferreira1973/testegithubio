@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'element_group': 'menu' 
             });
         });
-    }
+    };
     const menuSobre = document.querySelector('.menu-lista-link.menu-lista-sobre');
     if (menuSobre) {
         menuSobre.addEventListener('click', () => {
@@ -61,5 +61,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 'element_group': 'menu' 
             });
         });
-    }
+    };
 });
