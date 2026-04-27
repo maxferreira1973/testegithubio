@@ -62,4 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     };
+    // -- ANÁLISE MONTADORAS --
+    document.querySelectorAll('.card-montadoras').forEach(card => {
+        card.addEventListener('click', function() {
+            const nome = this.getAttribute('data-name') ? this.getAttribute('data-name').toLowerCase() : 'desconhecido';
+            gtag('event', 'view_card', {
+                'page_location': pageLoc,
+                'element_name': nome,
+                'element_group': 'ver_mais'
+            });
+        });
+    });
 });
